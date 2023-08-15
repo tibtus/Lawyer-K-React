@@ -23,7 +23,7 @@ function Header() {
         <div id='home' className='header-container navigation'>
             <div className='header-container-block left'>
                 <div className="icon " onClick={handleClick}>
-                    <a href="#home">
+                    <a href="#about">
                         ПРО НАС
                     </a>
                 </div>

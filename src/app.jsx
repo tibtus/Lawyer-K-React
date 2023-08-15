@@ -3,7 +3,7 @@ import React from "react";
 import Header from "./components/header/header";
 import Home from "./components/home/home";
 import AboutMe from "./components/aboutme/aboutme";
-// import About from "./components/about/about";
+import About from "./components/about/about";
 // import Contact from "./components/contact/contact";
 // import Navbar from "./components/nav/nav";
 // import Members from "./components/members/members";
@@ -32,7 +32,7 @@ function WebContent() {
                         {/*<Navbar/>*/}
                         <Home/>
                         <AboutMe/>
-                        {/*<About/>*/}
+                        <About/>
                         {/*<Contact/>*/}
 
 

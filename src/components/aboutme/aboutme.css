@@ -73,10 +73,14 @@
 
     .aboutme-container-photo {
         width: 100%;
+        min-height: calc(100%);
     }
 
     .aboutme-container-description {
         width: 100%;
         padding: 5px;
+        min-height: calc(100%);
     }
+
+
 }
