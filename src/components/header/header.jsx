@@ -1,6 +1,7 @@
 import React from "react";
 //styles
 import './header.css';
+//images
 import logoImage from '../props/img/logoWhite.png';
 
 function Header() {
@@ -61,7 +62,7 @@ function Header() {
                 </div>
                 <div className="icon ">
                     <a href="/">
-                        UA/EN
+                        UA
                     </a>
                 </div>
             </div>

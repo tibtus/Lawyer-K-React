@@ -65,15 +65,13 @@ function Home() {
                     </h2>
 
 
-                    <a href='#about' className='scroll-down'>
+                    <a href='#aboutme' className='scroll-down'>
                         <hr/>
 
                         <PiMouseSimpleDuotone className='scroll'/>
 
                         <hr/>
                     </a>
-
-
                 </div>
             )}
         </MyContext.Consumer>

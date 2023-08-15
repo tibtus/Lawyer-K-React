@@ -14,9 +14,8 @@
 body {
     background: rgb(234, 227, 243);
     min-height: 100vh;
-    /*font-family: "Inter", sans-serif;*/
-    /*font-family: system-ui, sans-serif;*/
-    font-family: "Open Sans Condensed", sans-serif;
+    /*font-family: "Open Sans Condensed", sans-serif;*/
+    font-family: var(--font-pri);
 }
 
 html {
@@ -38,7 +37,10 @@ html {
     --color-black: #000000;
     --color-white: #ffffff;
     --color-beige: #f2b381;
+    --color-green: rgb(102, 187, 106);;
 
+    --font-pri: "Open Sans Condensed", sans-serif;
+    --font-sec: "Inter", sans-serif;
 
     --pc-width: 75%;
     --tab-width: 90%;
@@ -46,16 +48,17 @@ html {
 }
 
 .container {
-    border-radius: 10px;
-    width: var(--pc-width);
-    color: var(--color-beige);
+    /*border-radius: 10px;*/
+    /*width: var(--pc-width);*/
+    color: var(--color-white);
+    background-color: var(--color-black);
     /*padding: 10px 40px;*/
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1170px;
-    /*min-height: 93vh;*/
+    min-height: calc(100vh - 240px);
+    /*max-width: 1170px;*/
 }
 
 @media (max-width: 500px) {

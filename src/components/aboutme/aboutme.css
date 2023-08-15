@@ -1,0 +1,82 @@
+.aboutme-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    backdrop-filter: blur(20px);
+    padding: 120px 0;
+    font-size: 22px;
+}
+
+.aboutme-container-photo {
+    width: 50%;
+    min-height: calc(100vh - 240px);
+    color: var(--color-white);
+}
+
+.aboutme-container-description {
+    width: 50%;
+    min-height: calc(100vh - 240px);
+    color: var(--color-white);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.aboutme-container-photo img {
+    width: 100%;
+    max-height: calc(100vh - 240px);
+    object-fit: cover;
+    object-position: center;
+}
+
+.aboutme-container-description .description {
+    width: 100%;
+    max-height: calc(100vh - 240px);
+    color: var(--color-white);
+    padding: 30px;
+
+}
+
+.aboutme-container-description .description p {
+    color: var(--color-white);
+
+}
+
+.aboutme-container-description .description p a {
+    color: var(--color-pri);
+}
+
+.aboutme-container-description .description .description-button {
+    color: var(--color-green);
+}
+
+
+@media (max-width: 1640px) {
+    .aboutme-container {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .aboutme-container {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1196px) {
+    .aboutme-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutme-container-photo {
+        width: 100%;
+    }
+
+    .aboutme-container-description {
+        width: 100%;
+        padding: 5px;
+    }
+}

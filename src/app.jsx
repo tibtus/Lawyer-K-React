@@ -2,6 +2,7 @@ import React from "react";
 //components
 import Header from "./components/header/header";
 import Home from "./components/home/home";
+import AboutMe from "./components/aboutme/aboutme";
 // import About from "./components/about/about";
 // import Contact from "./components/contact/contact";
 // import Navbar from "./components/nav/nav";
@@ -30,9 +31,13 @@ function WebContent() {
                         <Header/>
                         {/*<Navbar/>*/}
                         <Home/>
+                        <AboutMe/>
                         {/*<About/>*/}
-                        {/*<Members/>*/}
                         {/*<Contact/>*/}
+
+
+                        {/*<Members/>*/}
+
                         {/*<Footer/>*/}
                     </React.Fragment>
                 )}
