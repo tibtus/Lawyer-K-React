@@ -81,7 +81,7 @@
 }
 
 .header-container-block .icon.active-nav a {
-    color: var(--color-beige);
+    color: var(--color-pri);
 }
 
 
@@ -123,7 +123,7 @@
     }
 
     .header-container-block.right-lang:hover {
-        color: var(--color-beige);
+        color: var(--color-pri);
         cursor: pointer;
     }
 

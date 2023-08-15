@@ -48,7 +48,7 @@
 
 .about-container-description .description p b {
     font-size: 20px;
-    color: var(--color-beige);
+    color: var(--color-pri);
     text-transform: uppercase;
     font-weight: bold;
 
@@ -65,7 +65,7 @@
 
 .about-container-description .description h3 {
     /*color: var(--color-pri);*/
-    color: var(--color-beige);
+    color: var(--color-pri);
     text-transform: uppercase;
     font-weight: bold;
 
