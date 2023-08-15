@@ -3,7 +3,7 @@ import React, {useEffect, useState} from "react";
 import './home.css';
 //components
 //icons
-import {BsMouse} from 'react-icons/bs';
+import {PiMouseSimpleDuotone} from "react-icons/pi";
 
 //Context
 import MyContext from "../../context/context";
@@ -11,7 +11,7 @@ import MyContext from "../../context/context";
 
 function Home() {
     const importAll = (r) => r.keys().map(r);
-    const images = importAll(require.context('../props/pic/', false, /\.(png|jpe?g|svg)$/));
+    const images = importAll(require.context('../props/load/', false, /\.(png|jpe?g|svg)$/));
     const [activeImageIndex, setActiveImageIndex] = useState(0);
 
     let handleClick = (e) => {
@@ -30,6 +30,16 @@ function Home() {
         }, 5000);
         return () => clearInterval(interval);
     }, [imagesCount]);
+
+    const imageTextData = [
+        {
+            text: 'Kolomiiets LC - Ваша юридична безпека та запорука юридичного захисту',
+        },
+        {
+            text: 'Ваша юридична безпека - наша мета: ефективні юридичні рішення для кожного клієнта',
+        },
+
+    ];
 
     return (
 
@@ -51,17 +61,19 @@ function Home() {
                         ))}
                     </div>
                     <h2>
-                        <span>Kolomiiets LC - Ваша юридична безпека та запорука юридичного захисту</span> <br/>
-                        <span>
-                            Ваша юридична безпека - наша мета: ефективні юридичні рішення для кожного клієнта
-                        </span> <br/>
+                        <span>{imageTextData[activeImageIndex].text}</span> <br/>
                     </h2>
+
 
                     <a href='#about' className='scroll-down'>
                         <hr/>
-                        <BsMouse className='scroll'/>
+
+                        <PiMouseSimpleDuotone className='scroll'/>
+
                         <hr/>
                     </a>
+
+
                 </div>
             )}
         </MyContext.Consumer>

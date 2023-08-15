@@ -5,24 +5,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    font-family: "Open Sans Condensed", sans-serif;
 
 }
 
 .home-container h2 {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 60%;
     margin-top: 50px;
+    left: 20%;
+    bottom: 10%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .home-container h2 span {
     font-size: 25px;
     opacity: 0.8;
     padding-bottom: 5px;
+    color: var(--color-white);
     border-bottom: 2px solid var(--color-pri);
 }
 
@@ -39,9 +43,10 @@
 }
 
 .scroll-down hr {
-    background-color: blue;
     width: 20px;
+    color: var(--color-pri);
 }
+
 
 .scroll-down h5 {
     font-size: 18px;
@@ -54,14 +59,23 @@
     font-size: 20px;
 }
 
+.scroll-down .scroll path {
+    color: var(--color-pri);
+
+
+}
+
+.scroll-down .scroll path:hover {
+    color: var(--color-white);
+    transition: 0.4s ease;
+}
+
 .options .option {
     position: relative;
     overflow: hidden;
     width: 100%;
     background: var(--optionBackground, #e6e9ed);
     background-position: center;
-    /*transition: 1s cubic-bezier(0.05, 0.61, 0.41, 0.95);*/
-    /*transition: 0.4s ease;*/
     filter: brightness(60%);
 }
 
